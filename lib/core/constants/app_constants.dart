@@ -1,9 +1,7 @@
-import 'sound_catalog.dart';
-
 class AppConstants {
   AppConstants._();
 
-  static const String defaultAlarmSound = SoundCatalog.defaultOption.assetPath;
+  static const String defaultAlarmSound = 'assets/sounds/sweet_chime.mp3';
   static const String backgroundImage = 'assets/images/romantic_background.jpg';
 
   static const List<String> weekdayShortLabels = [
