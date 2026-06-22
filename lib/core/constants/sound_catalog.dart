@@ -18,11 +18,13 @@ class SoundOption extends Equatable {
 class SoundCatalog {
   SoundCatalog._();
 
+  static const SoundOption defaultOption = SoundOption(
+    name: 'Sweet Chime',
+    assetPath: 'assets/sounds/sweet_chime.mp3',
+  );
+
   static const List<SoundOption> options = [
-    SoundOption(
-      name: 'Sweet Chime',
-      assetPath: 'assets/sounds/sweet_chime.mp3',
-    ),
+    defaultOption,
     SoundOption(
       name: 'Gentle Bells',
       assetPath: 'assets/sounds/gentle_bells.mp3',
@@ -40,8 +42,6 @@ class SoundCatalog {
       assetPath: 'assets/sounds/heartbeat_chime.mp3',
     ),
   ];
-
-  static const SoundOption defaultOption = options[0];
 
   /// Looks up the display option matching a stored asset path, falling
   /// back to the default if the path is unrecognized (e.g. an alarm saved
