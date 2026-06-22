@@ -22,7 +22,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - your-email@example.com
+          ih328495@gmail.com
         notify:
           success: true
           failure: true
